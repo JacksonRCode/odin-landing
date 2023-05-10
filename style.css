@@ -1,6 +1,150 @@
-.body {
+
+body {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.hero {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px 100px 100px;
+}
+
+.hero-header {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.h-link,
+.hti-left-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-text-img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hti-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    padding: 0;
+    margin: 0;
+}
+
+.hti-left-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    width: 20%;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button:click {
+    border: white;
+}
+
+.wobbu {
+    width: 450px;
+    height: auto;
+}
+
+/* End of HEADER -- START OF INFO */
+
+.info {
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.info-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    padding: 30px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    min-width: 225px;
+}
+
+.frog {
+    width: 200px;
+    height: auto; 
+    flex: 0 0 auto;
+    border-radius: 10px;
+    border: solid 4px #3882F6;
+}
+
+/* END OF INFO -- START OF QUOTE */
+
+.quote {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    font-family: "light italic";
+}
+
+/* END OF QUOTE */
+
+.cta {
+    background-color: #3882F6;
+}
+
+/* END OF CTA */
+
+.footer {
+    background-color: #1F2937;
+    color: white;
 }
