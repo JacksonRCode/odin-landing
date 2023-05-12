@@ -1,7 +1,13 @@
+html {
+    min-height: 100%;
+}
+
 
 body {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif; 
@@ -65,10 +71,12 @@ a:link {
 button {
     background-color: #3882F6;
     color: white;
-    width: 20%;
+    width: 100px;
+    height: 40px;
     border: none;
     padding: 10px 12px;
     border-radius: 10px;
+    flex: 0 0 auto;
 }
 
 button:active {
@@ -99,13 +107,14 @@ button:click {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
-    padding: 30px;
+    padding: 40px;
 }
 
 .info-container {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 60px;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 100px;
     flex-wrap: wrap;
 }
 
@@ -129,22 +138,72 @@ button:click {
 
 /* END OF INFO -- START OF QUOTE */
 
-.quote {
+.quote-container {
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+}
+
+.quote {
     color: #1F2937;
     font-size: 36px;
-    font-family: "light italic";
+    max-width: 950px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote-sig {
+    align-self: flex-end;
+    padding-right: 50px;
+    font-size: 26px;
+    font-weight: 550;
 }
 
 /* END OF QUOTE */
 
-.cta {
-    background-color: #3882F6;
+.cta-container {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
 }
 
+.cta {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 50px 100px;
+    border-radius: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left-top {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.left-bottom {
+    color: white;
+}
+
+.cta-button {
+    border: solid 3px white;
+}
 /* END OF CTA */
 
 .footer {
     background-color: #1F2937;
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+}
+
+.footer-text {
     color: white;
+    padding: 50px;
 }
